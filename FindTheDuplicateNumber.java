@@ -1,3 +1,6 @@
+// https://www.youtube.com/watch?v=i4kBcvA3OV4
+// https://www.youtube.com/watch?v=-YiQZi3mLq0
+
 class Solution {
     public int findDuplicate(int[] nums) {
         int slowPointer = nums[0];
