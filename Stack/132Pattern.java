@@ -1,4 +1,5 @@
 // https://www.youtube.com/watch?v=Fr4SJrgIKrA
+// https://leetcode.com/problems/132-pattern/solution/
 
 class Solution {
     public boolean find132pattern(int[] nums) {
