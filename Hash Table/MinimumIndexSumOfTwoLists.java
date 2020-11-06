@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/minimum-index-sum-of-two-lists/solution/
+// https://leetcode.com/problems/minimum-index-sum-of-two-lists/solution/
 
 class Solution {
     public String[] findRestaurant(String[] list1, String[] list2) {

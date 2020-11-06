@@ -1,4 +1,5 @@
 // https://github.com/eMahtab/insert-interval
+// https://www.youtube.com/watch?v=jeKvO1JS-4w&ab_channel=happygirlzt
 
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {

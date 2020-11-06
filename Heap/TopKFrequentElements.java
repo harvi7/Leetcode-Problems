@@ -12,18 +12,20 @@ class Solution {
 //                  res.add(pq.poll());
 //         return res;
         
+        if (k == nums.length) return nums;
         Map<Integer, Integer> dic = new HashMap<>();
         for(int num : nums) {
             dic.put(num, dic.getOrDefault(num, 0) + 1);
         }
-        
-        PriorityQueue<int[]> queue = new PriorityQueue<>((q1, q2)->q2[1]-q1[1]);
+
+        PriorityQueue<int[]> queue = new PriorityQueue<>((q1, q2) -> q2[1] - q1[1]);
         for(int n : dic.keySet()) {
             queue.offer(new int[]{n, dic.get(n)});
         }
-        List<Integer> res = new ArrayList<>();
-        for(int i=0; i<k; i++) {
-            res.add(queue.poll()[0]);
+
+        int[] res = new int[k];
+        for(int i = 0; i < k; i++) {
+            res[i] = queue.poll()[0];
         }
         return res;
     }

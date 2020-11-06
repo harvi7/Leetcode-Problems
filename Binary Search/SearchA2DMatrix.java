@@ -8,7 +8,7 @@ class Solution {
         
         while (left <= right) {
             int midpoint  = left + (right - left) / 2;
-            int midElement = matrix[midpoint/columns][midpoint%columns];
+            int midElement = matrix[midpoint / columns][midpoint % columns];
             if (midElement == target) return true;
             else if (target < midElement) right = midpoint - 1;
             else left = midpoint + 1;
