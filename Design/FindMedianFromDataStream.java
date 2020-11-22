@@ -8,29 +8,29 @@ class MedianFinder {
     /** initialize your data structure here. */
     public MedianFinder() {
         minQ = new PriorityQueue<>((a, b) -> b - a);
-		maxQ = new PriorityQueue<>();
+		  maxQ = new PriorityQueue<>();
     }
     
     public void addNum(int num) {
-        if (isEmpty() || minQ.size() <= maxQ.size()) minQ.add(num);
-        else maxQ.add(num);
-		if (maxQ.size() == 0 || minQ.size() == 0) return;
-        if (minQ.peek() > maxQ.peek()) {
-			int temp = minQ.poll();
-			minQ.add(maxQ.poll());
-			maxQ.add(temp);
-		}
+      if (isEmpty() || minQ.size() <= maxQ.size()) minQ.add(num);
+      else maxQ.add(num);
+      if (maxQ.size() == 0 || minQ.size() == 0) return;
+          if (minQ.peek() > maxQ.peek()) {
+        int temp = minQ.poll();
+        minQ.add(maxQ.poll());
+        maxQ.add(temp);
+      }
     }
     
     public double findMedian() {
         if (minQ.size() > maxQ.size()) return minQ.peek();
-		else if (minQ.size() < maxQ.size()) return maxQ.peek();
-		else return (double) (minQ.peek() + maxQ.peek()) / 2;
+      else if (minQ.size() < maxQ.size()) return maxQ.peek();
+      else return (double) (minQ.peek() + maxQ.peek()) / 2;
     }
     
     public boolean isEmpty() {
-		return minQ.isEmpty() && maxQ.isEmpty();
-	}
+		  return minQ.isEmpty() && maxQ.isEmpty();
+	  }
 }
 
 /**

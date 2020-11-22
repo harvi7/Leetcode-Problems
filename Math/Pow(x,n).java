@@ -1,4 +1,5 @@
 // https://www.youtube.com/watch?v=wAyrtLAeWvI
+// https://www.youtube.com/watch?v=snOaKR2xgZg  
 
 class Solution {
     public double myPow(double x, int n) {

@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=PWgFnSygweI
+
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
         if (intervals == null || intervals.length < 1) return 0;

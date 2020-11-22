@@ -9,7 +9,6 @@ class Solution {
                 row[i] = row[C - 1 - i] ^ 1;
                 row[C - 1 - i] = tmp;
             }
-
         return A;
     }
 }

@@ -1,4 +1,4 @@
-// https://www.youtube.com/watch?v=OvpKeraoxW0&list=PLiQ766zSC5jMEpcGL0nSkfDM3paBP5FOE&index=3
+// https://www.youtube.com/watch?v=OvpKeraoxW0
 
 class Solution {
     public Node copyRandomList(Node head) {

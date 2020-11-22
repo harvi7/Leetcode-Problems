@@ -11,9 +11,9 @@ class Solution {
         q.offer(' ');
         return helper(q);
     }
-    
     private int helper(Queue<Character> q) {
-        int num = 0, prev = 0, sum = 0;
+        int num = 0;
+        int prev = 0, sum = 0;
         char prevOp = '+';
 
         while (!q.isEmpty()) {
@@ -32,8 +32,15 @@ class Solution {
                     sum += prev;
                     prev = -num;
                     break;
+                case '*':
+                    prev *= num;
+                    break;
+                case '/':
+                    prev /= num;
+                    break;
                 }
                 if (c == ')') break;
+
                 num = 0;
                 prevOp = c;
             }

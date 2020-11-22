@@ -9,8 +9,7 @@ class Solution {
 
         q.offer(' ');
 
-        int num = 0;
-        int prev = 0, sum = 0;
+        int num = 0, prev = 0, sum = 0;
         char prevOp = '+';
 
         while (!q.isEmpty()) {

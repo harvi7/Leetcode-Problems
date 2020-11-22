@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=NhapasNIKuQ&ab_channel=NickWhite
+
 class Solution {
     public ListNode reverseList(ListNode head) {
         if (head == null) return null;
