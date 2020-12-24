@@ -1,4 +1,5 @@
-// https://www.youtube.com/watch?v=vy2mnT3TEXQ
+// https://www.youtube.com/watch?v=
+// https://www.youtube.com/watch?v=5GS17j6tcOk
 
 class Solution {
     public Node connect(Node root) {
