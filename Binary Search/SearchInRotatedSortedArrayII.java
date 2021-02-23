@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=WkihvY2rJjc
+
 class Solution {
     public boolean search(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
