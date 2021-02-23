@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=uvB-Ns_TVis&ab_channel=NickWhite
+
 class Solution {
     public void sortColors(int[] nums) {   
         if (nums.length == 0 || nums.length == 1) return;

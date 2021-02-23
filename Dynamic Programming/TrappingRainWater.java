@@ -1,7 +1,7 @@
 // https://www.youtube.com/watch?v=wz00uI9mDXA
 
 class Solution {
-    public int trap(int[] height) {
+    public int trap(int[] height) { 
         int totalAmount = 0;
         if (height == null || height.length == 0)
             return totalAmount;
