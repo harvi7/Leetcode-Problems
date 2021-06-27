@@ -1,5 +1,24 @@
 // https://www.youtube.com/watch?v=3B5gnrwRmOA
 
+// class Solution {
+//     public List<List<Integer>> pathSum(TreeNode root, int sum) {
+//         List<List<Integer>> paths = new ArrayList<>();
+//         findPaths(root, sum, new ArrayList<Integer>(), paths); 
+//         return paths;
+//     }
+    
+//     private void findPaths(TreeNode root, int sum, List<Integer> current, List<List<Integer>> paths) {
+//         if (root == null) return;
+//         current.add(root.val);
+//         if (root.val == sum && root.left == null && root.right == null) {
+//             paths.add(current);
+//             return;
+//         }
+//         findPaths(root.left, sum - root.val, new ArrayList<Integer>(current), paths);
+//         findPaths(root.right, sum - root.val, new ArrayList<Integer>(current), paths);
+//     }
+// }
+
 class Solution {
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> paths = new ArrayList<>();
@@ -10,11 +29,16 @@ class Solution {
     private void findPaths(TreeNode root, int sum, List<Integer> current, List<List<Integer>> paths) {
         if (root == null) return;
         current.add(root.val);
-        if (root.val == sum && root.left == null && root.right == null) {
+        sum -= root.val;
+        if (root.left == null && root.right == null && sum == 0) {
             paths.add(current);
             return;
         }
-        findPaths(root.left, sum - root.val, new ArrayList<Integer>(current), paths);
-        findPaths(root.right, sum - root.val, new ArrayList<Integer>(current), paths);
+        // if (root.val == sum && root.left == null && root.right == null) {
+        //     paths.add(current);
+        //     return;
+        // }
+        findPaths(root.left, sum, new ArrayList<Integer>(current), paths);
+        findPaths(root.right, sum, new ArrayList<Integer>(current), paths);
     }
 }

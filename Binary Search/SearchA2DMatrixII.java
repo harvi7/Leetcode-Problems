@@ -10,7 +10,7 @@ class Solution {
             if (matrix[row][col] == target)
                 return true;
             if (matrix[row][col] > target)
-                --col;
+                --col;  
             else
                 ++row;
         }

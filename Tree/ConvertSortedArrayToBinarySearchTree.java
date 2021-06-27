@@ -8,7 +8,7 @@ class Solution {
     
     private TreeNode constructBSTRecursive(int[] nums, int left, int right) {
         if (left > right) return null;
-        int mid = left + (right- left) / 2;
+        int mid = left + (right - left) / 2;
         TreeNode current = new TreeNode(nums[mid]);
         current.left = constructBSTRecursive(nums, left, mid - 1);
         current.right = constructBSTRecursive(nums, mid + 1, right);

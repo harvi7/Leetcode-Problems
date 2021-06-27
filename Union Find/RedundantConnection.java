@@ -5,7 +5,7 @@ class Solution {
         int n = edges.length + 1;
         UF uf = new UF(n);
               
-        for (int[] edge : edges){
+        for (int[] edge : edges) {
             if (!uf.union(edge[0], edge[1]))
                 return edge;
         }
@@ -21,16 +21,18 @@ class UF {
             sub[i] = i;
         }
     }
-    int find(int x) {
+    
+    int find (int x) {
         if (x != sub[x]){
             sub[x] = find(sub[x]);
         }
         return sub[x];
     }
+    
     boolean union (int x, int y) {
         int xr = find(x); int yr = find(y);
         if (xr == yr)
-            return false;
+        return false;
         
         sub[xr] = find(yr);
         return true;
