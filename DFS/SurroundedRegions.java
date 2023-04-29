@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=ztTLGMeleco
+
 class Solution {
     public void solve(char[][] board) {
         if (board == null || board.length == 0)

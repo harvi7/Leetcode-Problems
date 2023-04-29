@@ -1,4 +1,6 @@
+// https://www.youtube.com/watch?v=73r3KWiEvyk
 // https://leetcode.com/problems/house-robber/solution/
+// https://www.youtube.com/watch?v=ZwDDLAeeBM0
 
 class Solution {
     public int rob(int[] nums) {

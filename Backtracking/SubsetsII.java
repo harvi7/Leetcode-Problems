@@ -8,8 +8,7 @@ class Solution {
             return results;
         Arrays.sort(nums);
         
-        List<Integer> subset =new ArrayList<>();
-        findAllSubsets(nums, results, subset, 0);
+        findAllSubsets(nums, results, new ArrayList<>(), 0);
         
         return results;
     }

@@ -1,8 +1,9 @@
+// https://www.youtube.com/watch?v=OM1MTokvxs4
 // https://www.youtube.com/watch?v=hM4mHTi4AnA&feature=youtu.be
 
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
-        if (traingle.size( == 0)) return 0;
+        if (traingle.size() == 0) return 0;
         int rows = triangle.size();
         int[] dp = new int[rows + 1];
         

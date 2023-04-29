@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/jump-game-ii/solution/
+// https://www.youtube.com/watch?v=dJ7sWiOoK7g
 
 class Solution {
     public int jump(int[] nums) {

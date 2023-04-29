@@ -31,7 +31,7 @@ class Solution {
             maxLen = Math.max(maxLen, word.length());
         }
         dp[0] = true;
-        for (int end = 1; end < s.length() + 1;end++) {
+        for (int end = 1; end < s.length() + 1; end++) {
             for (int j = end - 1; j >= 0; j--) {
                 if (end - j > maxLen) continue;
                 if (dp[j] && wordDict.contains(s.substring(j, end))) {
